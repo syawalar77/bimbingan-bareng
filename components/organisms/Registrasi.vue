@@ -43,7 +43,7 @@
                     class="btn btn-warning text-light btn-regstration"
                 >
                     <span
-                        class="spinner-border spinner-border-sm text-dark"
+                        class="text-dark"
                         role="status"
                         aria-hidden="true"
                     ></span>
