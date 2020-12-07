@@ -1,8 +1,8 @@
 <template>
-    <div class="footer-container">
+    <div class="footer-container" id="footer">
         <div class="footer-content">
             <div class="first-footer">
-                <h5 class="first-footer-title">
+                <h5 class="first-footer-title font-weight-bold">
                     Bimbinganbareng.com
                 </h5>
                 <p class="first-footer-paragraf">
@@ -14,7 +14,7 @@
                 <div>
 
                     <div class="second-footer-medsos">
-                        <h5>
+                        <h5 class="font-weight-bold">
                             Media Sosial
                         </h5>
                         <a href="https://www.instagram.com/_akbrswalarr/">
@@ -34,7 +34,7 @@
 
                     </div>
                     <div class="second-footer-address">
-                        <h5 class="second-footer-title">
+                        <h5 class="second-footer-title font-weight-bold">
                             Alamat
                         </h5>
                         <p class="second-footer-paragraf">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="second-footer-contact">
-                    <h5>
+                    <h5 class="font-weight-bold">
                         Hubungi Kami
                     </h5>
                     <div class="medsos-content">
@@ -81,7 +81,7 @@ export default {
 .footer-container {
     background-color: #F8F9FA;
     margin-top: 100px;
-    font-family: nunito;
+    padding-top: 50px;
 }
 .medsos-content {
     display: flex;

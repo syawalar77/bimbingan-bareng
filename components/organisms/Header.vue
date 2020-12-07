@@ -26,16 +26,13 @@
                         <a class="nav-link text-light" @click="toTeknologi">Teknologi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" >Disabled</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link text-light" @click="toPlatform">Platform</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" @click="toFlow">Flow User</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" >Hubungi</a>
+                        <a class="nav-link text-light" @click="toFooter">Hubungi</a>
                     </li>
                 </ul>
             </div>
@@ -57,18 +54,23 @@ export default {
     mounted() {
         this.services = document.getElementById("services");
         this.benefit = document.getElementById("benefit");
-        this.teknolgi = document.getElementById("teknologi");
+        this.teknologi = document.getElementById("teknologi");
         this.platform = document.getElementById("platform");
         this.flow = document.getElementById("flow");
-
+        this.footer = document.getElementById("footer");
     },
     methods: {
+        hideMenu() {
+            let menuContainer = document.getElementById('navbarNav')
+            menuContainer.classList.remove("show")
+        },
         toServices() {
             this.services.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start',
                 inline: 'nearest',
             });
+            this.hideMenu()
         },
         toBenefit() {
             this.benefit.scrollIntoView({
@@ -76,6 +78,7 @@ export default {
                 block: "start",
                 inline: "nearest",
             })
+            this.hideMenu()
         },
         toTeknologi() {
             this.teknologi.scrollIntoView({
@@ -83,6 +86,7 @@ export default {
                 block: "start",
                 inline: "nearest",
             })
+            this.hideMenu()
         },
         toPlatform() {
             this.platform.scrollIntoView({
@@ -90,6 +94,7 @@ export default {
                 block: "start",
                 inline: "nearest",
             })
+            this.hideMenu()
         },
         toFlow() {
             this.flow.scrollIntoView({
@@ -97,6 +102,15 @@ export default {
                 block: "start",
                 inline: "nearest",
             })
+            this.hideMenu()
+        },
+        toFooter() {
+            this.footer.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest",
+            })
+            this.hideMenu()
         },
     }
 
@@ -107,8 +121,6 @@ export default {
 .navbar {
     background-color: #A4DEF9;
     font-size: 18px;
-    font-family: nunito;
-
 }
 
 

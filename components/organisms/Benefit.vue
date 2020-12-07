@@ -34,7 +34,7 @@ export default {
 <style>
 .benefit-container {
     margin-top: 150px;
-    font-family: nunito;
+    padding-top: 50px;
 }
 @media (min-width: 800px) {
     .firts-benefit,

@@ -66,7 +66,7 @@ export default {
 .teknologi-container {
     margin-top: 130px;
     background-color: #F8F9FA;
-    font-family: nunito;
+    padding-top: 50px;
 }
 .teknologi {
     width: 70%;

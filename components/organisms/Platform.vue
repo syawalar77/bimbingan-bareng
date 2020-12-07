@@ -56,7 +56,7 @@ export default {
 
 <style>
 .platform-container {
-    font-family: nunito;
+    padding-top: 60px;
 }
 @media (min-width: 800px) {
     .platform-title {

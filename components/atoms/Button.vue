@@ -1,7 +1,8 @@
 <template>
     <div>
         <button 
-            class="btn text-light">
+            class="btn text-light"
+            @button="$emit('update', $event.target.value)">
             {{ titleBtn }}
         </button>
     </div>

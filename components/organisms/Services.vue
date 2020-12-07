@@ -41,7 +41,7 @@ export default {
 
 <style>
 .container-services {
-    font-family: nunito;
+    padding-top: 50px;
 }
 .services-title {
     width: 60%;

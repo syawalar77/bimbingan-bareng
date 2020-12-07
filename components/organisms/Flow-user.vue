@@ -78,7 +78,7 @@ export default {
 <style>
 .flow-container {
     background-color: #A4DEF9;
-    font-family: nunito;
+    padding-top: 20px;
 }
 @media (max-width: 800px) {
     .flow-content {

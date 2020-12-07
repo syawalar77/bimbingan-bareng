@@ -1,13 +1,16 @@
 <template>
-    <div class="introduction-container">
+    <div class="introduction-container mt-5">
         <div class="introduction">
             <div class="introduction-left">
                 <p class="introduction-paragraf text-light">
                     Membantu bimbingan, mentoring dan penyelesaian Projek, Tugas Akhir dan Penelitian berupa Website dan Aplikasi Mobile.
                 </p>
-                <Button 
-                    titleBtn="Daftar"
-                />
+                <a @click="toRegistration">
+
+                    <Button 
+                        titleBtn="Daftar"
+                    />
+                </a>
 
             </div>
             <div class="introduction-right ml-auto">
@@ -28,6 +31,23 @@ import Button from '~/components/atoms/Button.vue'
 export default {
     components: {
         Button,
+    },
+    data() {
+        return {
+            registration: "",
+        }
+    },
+    mounted() {
+        this.registration = document.getElementById("registration");
+    },
+    methods: {
+        toRegistration() {
+            this.registration.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest',
+            });
+        },
     }
 }
 </script>
@@ -35,11 +55,10 @@ export default {
 <style>
 .introduction-container {
     background-color: #A4DEF9;
-    font-family: nunito;
 }
 @media (min-width :800px) {
     .introduction-container {
-        height: 500px;
+        height: 600px;
     }
 
     .introduction {
